@@ -19,7 +19,7 @@ export default {
   methods: {
     getAbout: function () {
       axios
-        .get("http://localhost:3000/", {
+        .get("http://localhost:3000/about", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

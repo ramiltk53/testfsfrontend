@@ -23,6 +23,10 @@ let router = new Router({
         requiresAuth: true
       }
     },
+    {
+      path: '*',
+      redirect: "/about"
+    }
   ]
 })
 
